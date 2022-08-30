@@ -1,0 +1,208 @@
+{
+  // support css
+  "reset css": {
+    "prefix": "reset",
+    "body": ["  padding: 0;", "  margin: 0;", "  box-sizing: border-box;"],
+    "description": "reset css"
+  },
+  ":root select ": {
+    "prefix": "root",
+    "body": [
+      ":root {",
+      "  --color-text: #000000;",
+      "  --color-bg: #07afd0;",
+      "}"
+    ],
+    "description": ":root select "
+  },
+  "flexbox center": {
+    "prefix": "flexcenter",
+    "body": [
+      "display: flex;",
+      "align-items: center;",
+      "  justify-content: center;",
+      "  text-align: center;"
+    ],
+    "description": "flexbox center"
+  },
+  "flexbox space-between": {
+    "prefix": "flexbetween",
+    "body": [
+      "display: flex;",
+      "align-items: center;",
+      "  justify-content: space-between;"
+    ],
+    "description": "flexbox space-between"
+  },
+  "flexbox end": {
+    "prefix": "flexend",
+    "body": [
+      "display: flex;",
+      "align-items: center;",
+      "  justify-content: end;"
+    ],
+    "description": "flexbox end"
+  },
+  "flexbox start": {
+    "prefix": "flexstart",
+    "body": [
+      "display: flex;",
+      "align-items: center;",
+      "  justify-content: start;"
+    ],
+    "description": "flexbox start"
+  },
+  "flexbox space-around: căn đều khoảng cách ": {
+    "prefix": "flexaround",
+    "body": [
+      "display: flex;",
+      "align-items: center;",
+      "  justify-content: space-around;;"
+    ],
+    "description": "flexbox space-around: căn đều khoảng cách "
+  },
+  "css tab img": {
+    "prefix": "img",
+    "body": ["width:100%;", "height:100%;", " object-fit: cover;"],
+    "description": "css tab img"
+  },
+
+  "css text color gradient": {
+    "prefix": "text-gradient",
+    "body": [
+      " background-clip: text;",
+      "  color: transparent;",
+      "  display: inline-block;",
+      "  white-space: nowrap;",
+      "  background-image: linear-gradient(4deg, #730ce9, #16cbf4, rgb(135, 26, 230));"
+    ],
+    "description": "css text color gradient"
+  },
+  "css button gradient": {
+    "prefix": "btn-gradient",
+    "body": [
+      "padding: 15px 20px;",
+      "  border-radius: 10px;",
+      "  color: white;",
+      "  font-size: 20px;",
+      "  display: flex;",
+      "  width: 250px;",
+      "  justify-content: center;",
+      "  text-align: center;",
+      "  font-weight: 600;",
+      "  background-image: linear-gradient(45deg, #03404b, #040a30);"
+    ],
+    "description": "css button gradient"
+  },
+  "css shadown gradient": {
+    "prefix": "shadown-gradient",
+    "body": ["box-shadow: 2px 2px 3px 2px #096dca, -2px -2px 3px 2px #bb06d7;"],
+    "description": "css shadown gradient"
+  },
+  "css Circle Loading": {
+    "prefix": "cloading",
+    "body": [
+      ".circle-loading {",
+      "   width: 10rem;",
+      "   height: 10rem;",
+      "   border-radius: 15rem;",
+      "   position: relative;",
+      "   margin: 0 auto;",
+      "   --color: #6a5af9;",
+      "}",
+      ".circle-loading:before {",
+      "   content: \"\";",
+      "   position: absolute;",
+      "   top: 0;",
+      "   left: 0;",
+      "   width: 100%;",
+      "   height: 100%;",
+      "   border-radius: inherit;",
+      "   border: 1rem solid transparent;",
+      "   border-right-color: var(--color);",
+      "   border-bottom-color: var(--color);",
+      "   animation: circleLoading 1s forwards infinite linear;",
+      "}",
+      "@keyframes circleLoading {",
+      "   to {",
+      "      transform: rotate(360deg);",
+      "   }",
+      "}"
+    ],
+    "description": "css Circle Loading"
+  },
+  "custom input file": {
+    "prefix": "custom-if",
+    "body": [
+      ".input-file {",
+      "   margin: 0 auto;",
+      "   width: 100%;",
+      "   height: 15rem;",
+      "   position: relative;",
+      "}",
+      ".input-label {",
+      "   border-radius: 8px;",
+      "   border: 1px dotted #eee;",
+      "   display: flex;",
+      "   align-items: center;",
+      "   justify-content: center;",
+      "   position: absolute;",
+      "   top: 0;",
+      "   left: 0;",
+      "   width: 100%;",
+      "   height: 100%;",
+      "   z-index: 2;",
+      "   cursor: pointer;",
+      "}",
+      ".input-file input[type=\"file\"] {",
+      "   display: none;",
+      "}",
+      ".input-file .icon-upload {",
+      "   color: #ccc;",
+      "   font-size: 3rem;",
+      "   pointer-events: none;",
+      "}"
+    ],
+    "description": "custom input file"
+  },
+  //support html
+  "html boximg: div>img": {
+    "prefix": "boximg",
+    "body": [" <div>", "        <img src=\"\" alt=\"\" />", "      </div>"],
+    "description": "html boximg: div>img"
+  },
+  "input upload file": {
+    "prefix": "input-file",
+    "body": [
+      "<div class=\"input-file\">",
+      "  <input type=\"file\" name=\"file\" id=\"file\" />",
+      "  <label for=\"file\" class=\"input-label\">",
+      "    <i class=\"fas fa-cloud-upload-alt icon-upload\"></i>",
+      "  </label>",
+      "</div>"
+    ],
+    "description": "input upload file"
+  },
+  // responsive mobile, tablet, laptop
+  "responsive for mobile": {
+    "prefix": "mobile",
+    "body": ["@media screen and (max-width: 360px) {", "  ", "}"],
+    "description": "responsive for mobile"
+  },
+  "responsive for tablet": {
+    "prefix": "tablet",
+    "body": ["@media screen and (max-width: 820px) {", "  ", "}"],
+    "description": "responsive for tablet"
+  },
+  "responsive for laptop": {
+    "prefix": "laptop",
+    "body": ["@media screen and (max-width: 1024px) {", "  ", "}"],
+    "description": "responsive for laptop"
+  },
+  "responsive for desktop": {
+    "prefix": "desktop",
+    "body": ["@media screen and (max-width: 1280px) {", "  ", "}"],
+    "description": "responsive for desktop"
+  }
+  //support tailwindcss
+}
