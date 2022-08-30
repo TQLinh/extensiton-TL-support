@@ -2,7 +2,7 @@
   "name": "tl-support",
   "displayName": "TL-support",
   "description": "support html, css, scss,",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "publisher": "linhtran",
   "engines": {
     "vscode": "^1.70.0"
