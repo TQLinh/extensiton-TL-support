@@ -1,9 +1,15 @@
 {
   // support css
-  "reset css": {
+  "css reset *{}": {
     "prefix": "reset",
-    "body": ["  padding: 0;", "  margin: 0;", "  box-sizing: border-box;"],
-    "description": "reset css"
+    "body": [
+      "*{",
+      "  box-sizing: border-box;",
+      "  padding: 0px;",
+      "  margin: 0px;",
+      "}"
+    ],
+    "description": "css reset *{}"
   },
   ":root select ": {
     "prefix": "root",
@@ -165,6 +171,125 @@
     ],
     "description": "custom input file"
   },
+  "css a tabel base": {
+    "prefix": "tableBase",
+    "body": [
+      "body {",
+      "  font: normal medium/1.4 sans-serif;",
+      "}",
+      "table {",
+      "  border-collapse: collapse;",
+      "  width: 100%;",
+      "}",
+      "th, td {",
+      "  padding: 0.25rem;",
+      "  text-align: left;",
+      "  border: 1px solid #ccc;",
+      "}",
+      "tbody tr:nth-child(odd) {",
+      "  background: #eee;",
+      "}"
+    ],
+    "description": "css a tabel base"
+  },
+  "css hidden scrollbar": {
+    "prefix": "scroll-none",
+    "body": ["body::-webkit-scrollbar{", "  display: none;", "}"],
+    "description": "css hidden scrollbar"
+  },
+  "code css for search": {
+    "prefix": "search-css",
+    "body": [
+      "body {",
+      "    padding: 0;",
+      "    margin: 0;",
+      "    height: 100vh;",
+      "    width: 100%;",
+      "    background: #07051a;",
+      "}",
+      "",
+      "form{",
+      "    position: relative;",
+      "    top: 50%;",
+      "    left: 50%;",
+      "    transform: translate(-50%,-50%);",
+      "    transition: all 1s;",
+      "    width: 50px;",
+      "    height: 50px;",
+      "    background: white;",
+      "    box-sizing: border-box;",
+      "    border-radius: 25px;",
+      "    border: 4px solid white;",
+      "    padding: 5px;",
+      "}",
+      "",
+      "input{",
+      "    position: absolute;",
+      "    top: 0;",
+      "    left: 0;",
+      "    width: 100%;;",
+      "    height: 42.5px;",
+      "    line-height: 30px;",
+      "    outline: 0;",
+      "    border: 0;",
+      "    display: none;",
+      "    font-size: 1em;",
+      "    border-radius: 20px;",
+      "    padding: 0 20px;",
+      "}",
+      "",
+      ".fa{",
+      "    box-sizing: border-box;",
+      "    padding: 10px;",
+      "    width: 42.5px;",
+      "    height: 42.5px;",
+      "    position: absolute;",
+      "    top: 0;",
+      "    right: 0;",
+      "    border-radius: 50%;",
+      "    color: #07051a;",
+      "    text-align: center;",
+      "    font-size: 1.2em;",
+      "    transition: all 1s;",
+      "}",
+      "",
+      "form:hover,",
+      "form:valid{",
+      "    width: 200px;",
+      "    cursor: pointer;",
+      "}",
+      "",
+      "form:hover input,",
+      "form:valid input{",
+      "    display: block;",
+      "}",
+      "",
+      "form:hover .fa,",
+      "form:valid .fa{",
+      "    background: #07051a;",
+      "    color: white;",
+      "}",
+      "",
+      "",
+      "a {",
+      "  display: none;",
+      "  position: absolute;",
+      "  top: 70px;",
+      "  bottom:0;",
+      "  left: 0;",
+      "  right: 0;",
+      "  font-size: 20px;",
+      "  color: white;",
+      "  text-align: center; ",
+      "  width: 100%;",
+      "}",
+      "",
+      "form:valid a {",
+      "  display: block;",
+      "}"
+    ],
+    "description": "code css for search"
+  },
   //support html
   "html boximg: div>img": {
     "prefix": "boximg",
@@ -182,6 +307,66 @@
       "</div>"
     ],
     "description": "input upload file"
+  },
+  "code html a tabel": {
+    "prefix": "tableFrame",
+    "body": [
+      "<table class=\"zebra\"> ",
+      "<thead> ",
+      "<tr> ",
+      "    <th>Last Name</th> ",
+      "    <th>First Name</th> ",
+      "    <th>Email</th> ",
+      "    <th>Due</th> ",
+      "    <th>Web Site</th> ",
+      "</tr> ",
+      "</thead> ",
+      "<tbody> ",
+      "<tr> ",
+      "    <td>Smith</td> ",
+      "    <td>John</td> ",
+      "    <td>jsmith@gmail.com</td> ",
+      "    <td>$50.00</td> ",
+      "    <td>http://www.jsmith.com</td> ",
+      "</tr> ",
+      "<tr> ",
+      "    <td>Bach</td> ",
+      "    <td>Frank</td> ",
+      "    <td>fbach@yahoo.com</td> ",
+      "    <td>$50.00</td> ",
+      "    <td>http://www.frank.com</td> ",
+      "</tr> ",
+      "<tr> ",
+      "    <td>Doe</td> ",
+      "    <td>Jason</td> ",
+      "    <td>jdoe@hotmail.com</td> ",
+      "    <td>$100.00</td> ",
+      "    <td>http://www.jdoe.com</td> ",
+      "</tr> ",
+      "<tr> ",
+      "    <td>Conway</td> ",
+      "    <td>Tim</td> ",
+      "    <td>tconway@earthlink.net</td> ",
+      "    <td>$50.00</td> ",
+      "    <td>http://www.timconway.com</td> ",
+      "</tr> ",
+      "</tbody> ",
+      "</table> "
+    ],
+    "description": "code html a tabel"
+  },
+  "code html for search": {
+    "prefix": "search-html",
+    "body": [
+      "<link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.3.1/css/all.css\" integrity=\"sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU\" crossorigin=\"anonymous\">",
+      "",
+      "<form action=\"\">",
+      "  <input type=\"search\" required>",
+      "  <i class=\"fa fa-search\"></i>",
+      "  <a href=\"javascript:void(0)\" id=\"clear-btn\">Clear</a>",
+      "</form>"
+    ],
+    "description": "code html for search"
   },
   // responsive mobile, tablet, laptop
   "responsive for mobile": {
@@ -203,6 +388,22 @@
     "prefix": "desktop",
     "body": ["@media screen and (max-width: 1280px) {", "  ", "}"],
     "description": "responsive for desktop"
+  },
+
+  //suppoer javascript
+  "code javascript for search": {
+    "prefix": "search-js",
+    "body": [
+      "const clearInput = () => {",
+      "  const input = document.getElementsByTagName(\"input\")[0];",
+      "  input.value = \"\";",
+      "}",
+      "",
+      "const clearBtn = document.getElementById(\"clear-btn\");",
+      "clearBtn.addEventListener(\"click\", clearInput);",
+      ""
+    ],
+    "description": "code javascript for search"
   }
   //support tailwindcss
 }
